@@ -8,6 +8,10 @@ sudo apt-get install -y git
 sudo apt-get install -y curl
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
+# Install pip: python package manager
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install --upgrade pip
+
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
